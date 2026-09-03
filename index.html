@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Receita de bolo de cenoura com cobertura de chocolate, feita para compartilhar.">
+  <title>Bolo de Cenoura | Receita de casa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Receita de casa, início">
+      <span class="brand-mark">rc</span>
+      <span>receita de casa</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#ingredientes">Ingredientes</a>
+      <a href="#preparo">Preparo</a>
+      <button class="save-button" type="button" aria-pressed="false">
+        <span aria-hidden="true">♡</span> Salvar receita
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap" aria-labelledby="recipe-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Receita afetiva</p>
+        <h1 id="recipe-title">Bolo de cenoura<br><em>com cobertura</em></h1>
+        <p class="intro">Macio, dourado e com aquela calda de chocolate que quebra em pedacinhos. Um clássico simples para deixar a tarde mais gostosa.</p>
+        <div class="recipe-meta" aria-label="Informações da receita">
+          <div><strong>45</strong><span>minutos</span></div>
+          <div><strong>fácil</strong><span>dificuldade</span></div>
+          <div><strong>10</strong><span>porções</span></div>
+        </div>
+        <p class="author">Da cozinha da <strong>Isabelly</strong> <span>·</span> atualizado hoje</p>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=1200&q=85" alt="Bolo de cenoura coberto com chocolate em um prato claro">
+        <span class="image-note">feito com carinho <span>✦</span></span>
+      </div>
+    </section>
+
+    <section class="recipe-grid section-wrap" aria-label="Detalhes da receita">
+      <aside class="ingredients-panel" id="ingredientes">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> Para começar</p>
+          <h2>Ingredientes</h2>
+          <p>Separe tudo antes de ligar o forno. A receita rende uma forma média.</p>
+        </div>
+        <div class="servings-control" aria-label="Ajustar porções">
+          <span>Porções</span>
+          <div class="stepper">
+            <button type="button" data-action="decrease" aria-label="Diminuir porções">−</button>
+            <strong id="servings">10</strong>
+            <button type="button" data-action="increase" aria-label="Aumentar porções">+</button>
+          </div>
+        </div>
+        <ul class="ingredient-list">
+          <li><label><input type="checkbox"><span class="checkmark"></span><span><strong data-amount="3">3</strong> cenouras médias picadas</span></label></li>
+          <li><label><input type="checkbox"><span class="checkmark"></span><span><strong data-amount="4">4</strong> ovos</span></label></li>
+          <li><label><input type="checkbox"><span class="checkmark"></span><span><strong data-amount="1.5">1½</strong> xícara de óleo</span></label></li>
+          <li><label><input type="checkbox"><span class="checkmark"></span><span><strong data-amount="2">2</strong> xícaras de açúcar</span></label></li>
+          <li><label><input type="checkbox"><span class="checkmark"></span><span><strong data-amount="2.5">2½</strong> xícaras de farinha de trigo</span></label></li>
+          <li><label><input type="checkbox"><span class="checkmark"></span><span><strong data-amount="1">1</strong> colher de sopa de fermento</span></label></li>
+        </ul>
+        <div class="coverage"><span>Para a cobertura</span><p>4 colheres de chocolate em pó · 2 colheres de manteiga · ½ xícara de açúcar · ½ xícara de leite</p></div>
+      </aside>
+
+      <section class="steps-panel" id="preparo">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> Mãos à massa</p>
+          <h2>Modo de preparo</h2>
+          <p>O segredo é não abrir o forno antes dos primeiros 30 minutos.</p>
+        </div>
+        <ol class="steps-list">
+          <li class="step"><span class="step-number">01</span><div><h3>Prepare a massa</h3><p>Preaqueça o forno a 180°C. No liquidificador, bata as cenouras, os ovos e o óleo até formar um creme bem liso.</p></div></li>
+          <li class="step"><span class="step-number">02</span><div><h3>Junte os secos</h3><p>Transfira para uma tigela e misture o açúcar e a farinha aos poucos. Por último, incorpore o fermento delicadamente.</p></div></li>
+          <li class="step"><span class="step-number">03</span><div><h3>Leve para assar</h3><p>Despeje em uma forma untada e enfarinhada. Asse por cerca de 35 minutos, até o palito sair limpo.</p></div></li>
+          <li class="step"><span class="step-number">04</span><div><h3>Finalize com a calda</h3><p>Leve todos os ingredientes da cobertura ao fogo baixo. Mexa até engrossar e espalhe sobre o bolo ainda morno.</p></div></li>
+        </ol>
+        <div class="tip"><span class="tip-icon">✦</span><p><strong>Um detalhe que faz diferença</strong><br>Não bata a farinha no liquidificador. Misturar à mão deixa o bolo mais leve.</p></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><span>receita de casa</span><span>feito para dividir a mesa.</span></footer>
+</body>
+</html>
